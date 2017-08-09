@@ -23,21 +23,21 @@
 
 ### 创建文件
 
-#### 1.创建 learning-jQuery-i18n	
+#### 1.创建 learning-jQuery-i18n
 
-![webStrom][https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/webStrom.png?raw=true]
+![webStrom](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/webStrom.png?raw=true)
 
-![create][https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/create.png?raw=true]
+![create](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/create.png?raw=true)
 
 #### 2.创建文件夹examples
 
-![examples][https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/examples.png?raw=true]
+![examples](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/examples.png?raw=true)
 
 
 
 #### 3.创建index.html文件
 
-![indexHtml][https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/indexhtml.png?raw=true]
+![indexHtml](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/indexhtml.png?raw=true)
 
 #### 4.index.html页面代码
 
@@ -78,7 +78,7 @@
 
 ##### 5.引入jQuery
 
-![script][https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/script.png?raw=true]
+![script](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/script.png?raw=true)
 
 ```
 <script src="../jquery-1.4.2.js"></script>
@@ -86,7 +86,7 @@
 
 ```
 
-![src][https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/src.png?raw=true]
+![src](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/src.png?raw=true)
 
 #### 6.script 文件
 
