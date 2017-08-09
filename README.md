@@ -1,0 +1,1 @@
+# learning-jQuery-i18n-properties
