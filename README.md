@@ -12,7 +12,7 @@
 
 > jQuery.i18n 是一款轻量级的 jQuery 国际化插件。与 Java 里的资源文件类似，jQuery.i18n 文件对 JavaScript 进行国际化。jQuery.i18n 插件根据用户指定的（或浏览器提供的 ）语言和国家编码（符合 [ISO-639](https://baike.baidu.com/item/iso%20639) 和 [ISO-3166](https://baike.baidu.com/item/ISO%203166-1/5269555?fr=aladdin) 标准）来解析对应的文件。
 
-> 利用资源文件实现国际化是一种比较流行的方式，例如 Android 应用就可以采用以语言和国家编码命名的资源文件来实现国际化
+
 
 ### jQuery.i18n 特点
 
@@ -23,11 +23,15 @@
 
 ### 创建文件
 
+
+
 #### 1.创建 learning-jQuery-i18n
 
 ![webStrom](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/webStrom.png?raw=true)
 
 ![create](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/create.png?raw=true)
+
+
 
 #### 2.创建文件夹examples
 
@@ -38,6 +42,8 @@
 #### 3.创建index.html文件
 
 ![indexHtml](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/indexhtml.png?raw=true)
+
+
 
 #### 4.index.html页面代码
 
@@ -68,71 +74,17 @@
 <h1>
     点击👇就会有惊喜
 </h1>
-
 <div id='test1'>Test  One</div>
 <div id='test2'>Test2  Two</div>
 <div id='test3'>Test3  Three</div>
 <div id='test4'>Test4  Four</div>
 <div id='test5'>Test5  Five</div>
 <input type='button' id='btn' value='Internationalize!'/>
-<script>
-
-    $(document).ready(function () {
-        i18n_dict = {
-            'test1': '测试  1',
-            'test2': '测试  2',
-            'test3': '测试  3',
-            'test4': '测试  4',
-            'test5': '测试  5'
-        }
-
-        $.i18n.load(i18n_dict);
-
-        $('#btn').click(function () {
-            $('#test1')._t('test1');
-            $('#test2')._t('test2');
-            $('#test3')._t('test3');
-            $('#test4')._t('test4');
-            $('#test5')._t('test5');
-        })
-    })
-</script>
-
 
 </body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>jQuery i18n Plugin</title>
-    <style type="text/css">
-        body {
-            font-size: 30px;
-            text-align: center;
-        }
-        input {
-            font-size: 30px;
-        }
-        p {
-            font-size: 17px;
-        }
-    </style>
-</head>
-<body>
-<h1>
-    点击👇就会有惊喜
-</h1>
-
-<div id='example1'>Example 1</div>
-<div id='example2'>Example 2</div>
-<div id='example3'>Example 3</div>
-<div id='example4'>Example 4</div>
-<div id='example5'>Example 5</div>
-<input type='button' id='btn' value='Internationalize!' />
-
-</body>
-</html>
 ```
+
+
 
 ##### 5.引入jQuery
 
@@ -145,9 +97,53 @@
 
 ![src](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/src.png?raw=true)
 
-#### 6.script 文件
+
+
+##### 6. i18n_dict 相当于字典
 
 ```
+ i18n_dict = {
+            'test1': '测试  1',
+            'test2': '测试  2',
+            'test3': '测试  3',
+            'test4': '测试  4',
+            'test5': '测试  5'
+        }
+```
+
+
+
+##### 7.运行i18n
+
+```
+$.i18n.load(i18n_dict);     $.i18n.load() 参数1 : 运行将要转换的代码
+```
+
+
+
+##### 8.点击事件
+
+```
+  $('#btn').click(function () {
+            $('#test1')._t('测试1');
+            $('#test2')._t('测试2');
+            $('#test3')._t('测试3');
+            $('#test4')._t('测试4');
+            $('#test5')._t('测试5');
+        })
+```
+
+
+
+##### 9. _t ()含义
+
+​     _t()参数1 : 将要转换的参数名 
+
+
+
+##### 10.scritpt完整代码
+
+```	
 <script>
 
     $(document).ready(function () {
@@ -160,7 +156,7 @@
         }
 
         $.i18n.load(i18n_dict);
-
+        
         $('#btn').click(function () {
             $('#test1')._t('test1');
             $('#test2')._t('test2');
@@ -172,37 +168,9 @@
 </script>
 ```
 
-##### 7.i18n_dict 相当于字典
-
-```
- i18n_dict = {
-            'test1': '测试  1',
-            'test2': '测试  2',
-            'test3': '测试  3',
-            'test4': '测试  4',
-            'test5': '测试  5'
-        }
-```
-
-##### 8.运行i18n
-
-```
-$.i18n.load(i18n_dict);
-```
-
-##### 9.点击事件
-
-```
-  $('#btn').click(function () {
-            $('#test1')._t('test1');
-            $('#test2')._t('test2');
-            $('#test3')._t('test3');
-            $('#test4')._t('test4');
-            $('#test5')._t('test5');
-        })
-```
-
-##### 10. _t 含义
 
 
+
+
+### *注 : 以上代码只是简单的实现原理  ,  只代表个人立场,如在使用上述代码时出现任何情况,概不负责。  
 
