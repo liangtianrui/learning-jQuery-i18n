@@ -124,12 +124,12 @@ $.i18n.load(i18n_dict);     $.i18n.load() 参数1 : 运行将要转换的代码
 ##### 8.点击事件
 
 ```
-  $('#btn').click(function () {
-            $('#test1')._t('测试1');
-            $('#test2')._t('测试2');
-            $('#test3')._t('测试3');
-            $('#test4')._t('测试4');
-            $('#test5')._t('测试5');
+         $('#btn').click(function () {
+            $('#test1')._t('test1');
+            $('#test2')._t('test2');
+            $('#test3')._t('test3');
+            $('#test4')._t('test4');
+            $('#test5')._t('test5');
         })
 ```
 
