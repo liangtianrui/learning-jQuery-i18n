@@ -52,6 +52,64 @@
             font-size: 30px;
             text-align: center;
         }
+
+        input {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    </style>
+</head>
+<script src="../jquery-1.4.2.js"></script>
+<script src="../jquery.i18n.min.js"></script>
+<body>
+<h1>
+    点击👇就会有惊喜
+</h1>
+
+<div id='test1'>Test  One</div>
+<div id='test2'>Test2  Two</div>
+<div id='test3'>Test3  Three</div>
+<div id='test4'>Test4  Four</div>
+<div id='test5'>Test5  Five</div>
+<input type='button' id='btn' value='Internationalize!'/>
+<script>
+
+    $(document).ready(function () {
+        i18n_dict = {
+            'test1': '测试  1',
+            'test2': '测试  2',
+            'test3': '测试  3',
+            'test4': '测试  4',
+            'test5': '测试  5'
+        }
+
+        $.i18n.load(i18n_dict);
+
+        $('#btn').click(function () {
+            $('#test1')._t('test1');
+            $('#test2')._t('test2');
+            $('#test3')._t('test3');
+            $('#test4')._t('test4');
+            $('#test5')._t('test5');
+        })
+    })
+</script>
+
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery i18n Plugin</title>
+    <style type="text/css">
+        body {
+            font-size: 30px;
+            text-align: center;
+        }
         input {
             font-size: 30px;
         }
@@ -83,7 +141,6 @@
 ```
 <script src="../jquery-1.4.2.js"></script>
 <script src="../jquery.i18n.min.js"></script>
-
 ```
 
 ![src](https://github.com/liangtianrui/learning-jQuery-i18n/blob/master/image/src.png?raw=true)
@@ -91,27 +148,27 @@
 #### 6.script 文件
 
 ```
-<script  type="text/javascript">
-    $(document).ready(function(){
-        i18n_dict = {
-            "Example 1"  : '案例1',
-            "Example 2"  : "案例2",
-            "Example 3"  : "案例3",
-            "Example 4"  : "案例4",
-            "Example 5"  : "案例5",
+<script>
 
-        };
+    $(document).ready(function () {
+        i18n_dict = {
+            'test1': '测试  1',
+            'test2': '测试  2',
+            'test3': '测试  3',
+            'test4': '测试  4',
+            'test5': '测试  5'
+        }
 
         $.i18n.load(i18n_dict);
 
-        $('#btn').click( function(event) {
-            $('#example1')._t('Example 1');
-            $('#example2')._t('Example 2');
-            $('#example3')._t('Example 3');
-            $('#example4')._t('Example 4');
-            $('#example5')._t('Example 5');
-        });
-    });
+        $('#btn').click(function () {
+            $('#test1')._t('test1');
+            $('#test2')._t('test2');
+            $('#test3')._t('test3');
+            $('#test4')._t('test4');
+            $('#test5')._t('test5');
+        })
+    })
 </script>
 ```
 
@@ -119,12 +176,12 @@
 
 ```
  i18n_dict = {
-            "Example 1"  : '案例1',
-            "Example 2"  : "案例2",
-            "Example 3"  : "案例3",
-            "Example 4"  : "案例4",
-            "Example 5"  : "案例5",
-        };
+            'test1': '测试  1',
+            'test2': '测试  2',
+            'test3': '测试  3',
+            'test4': '测试  4',
+            'test5': '测试  5'
+        }
 ```
 
 ##### 8.运行i18n
@@ -136,13 +193,13 @@ $.i18n.load(i18n_dict);
 ##### 9.点击事件
 
 ```
- $('#btn').click( function(event) {
-            $('#example1')._t('Example 1');
-            $('#example2')._t('Example 2');
-            $('#example3')._t('Example 3');
-            $('#example4')._t('Example 4');
-            $('#example5')._t('Example 5');
-        });
+  $('#btn').click(function () {
+            $('#test1')._t('test1');
+            $('#test2')._t('test2');
+            $('#test3')._t('test3');
+            $('#test4')._t('test4');
+            $('#test5')._t('test5');
+        })
 ```
 
 ##### 10. _t 含义
